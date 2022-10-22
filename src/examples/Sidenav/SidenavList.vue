@@ -39,6 +39,30 @@
           </template>
         </sidenav-item>
       </li>
+      <!-- <li class="nav-item">
+        <sidenav-item
+          url="/virtual-reality"
+          :class="getRoute() === 'virtual-reality' ? 'active' : ''"
+          :navText="
+            this.$store.state.isRTL ? 'الواقع الافتراضي' : 'Virtual Reality'
+          "
+        >
+          <template v-slot:icon>
+            <i class="ni ni-app text-info text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/rtl-page"
+          :class="getRoute() === 'rtl-page' ? 'active' : ''"
+          navText="RTL"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li> -->
       <li class="mt-3 nav-item">
         <h6
           v-if="this.$store.state.isRTL"
@@ -57,7 +81,7 @@
       </li>
       <li class="nav-item">
         <sidenav-item
-          url="/profile"
+          url="/dashboard/profile"
           :class="getRoute() === 'profile' ? 'active' : ''"
           :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Profile'"
         >
