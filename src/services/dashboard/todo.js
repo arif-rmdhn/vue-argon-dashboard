@@ -7,4 +7,4 @@ const add = (body) => baseApi.post(`${api}`, body);
 const update = (id) => baseApi.put(`${api}/${id}`);
 const del = (id) => baseApi.put(`${api}/${id}`);
 
-export { list, add, update, del};
+export { list, add, update, del}; // Named export
